@@ -6,6 +6,10 @@
     background-color: bisque;
  }
 
+ .site-header img {
+  height: 87px;
+ }
+
  .header { 
   background: #555;
   color: #fff;

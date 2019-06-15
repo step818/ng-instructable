@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Project } from './models/project.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'How-To You Do';
+
+  masterProjectList: Project[] = [];
 }
