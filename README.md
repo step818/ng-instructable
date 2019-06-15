@@ -14,19 +14,19 @@ This exercise is designed to be a hub for DIY and "How-to" projects uploaded by 
 
 | Spec | Input | Output |
 | :-----------------    | :------------------ | :-------------- |
-| Returns a list of doctors by issue. | _Input:_ "Physical Therapy" | _Output:_ A list of doctors in the area that specialize or take clients based on physical therapy  |
-| Returns a list of doctors by name | _Input:_ "Rodriguez" | _Output:_ A list of doctors who have the name Rodriguez |
-| Returns error if the input has no matches | _Input:_ "0" | _Output:_ "No doctors match your search input" |
-| When a list is returned, information about each doctor will be included. | _Input:_ "Sleep problems" | _Output:_ Doctor name, address, phone number, website, and availability |
+| User can add a project to a database by creating an instance of their project | _Input:_ Title, category, difficulty, number of steps, [array with each step] is enter in each specified form. | _Output:_ A saved formatted and styled project that is easy for anyone to read. |
+| Returns each project for a searched category | _Input:_ "Automotive" | _Output:_ A list of project titles that have been uploaded by previous users that fall under the "automotive" category. |
+| When user enters '5' for number of steps, user will be able to write step 1 through 5 in order and seperately | _Input:_ "5" | _Output:_ First form displays, user types, clicks next, second form displays, ... 5th form displays, user writes final step, clicks submit, and project is saved. |
+| A project can be editted by a project owner | _Input:_ User clicks edit button and updates the number of steps and adds a few more | _Output:_ New, updated project will be saved. |
 
 ## Setup/Installation Requirements
 
-* _You can check out the repository link in my github pages [Link to repository](https://github.com/step818/)_
+* _You can check out the repository link in my github pages [Link to repository](https://github.com/step818/ng-friday-project)_
 
 #### Install, build and run the application
 1. Navigate to the application root directory:
 
-       $ cd DoctorLookup
+       $ cd ng-friday-project
 2. Install the required packages:
 
        $ npm install
@@ -35,7 +35,7 @@ This exercise is designed to be a hub for DIY and "How-to" projects uploaded by 
        $ npm run build
 4. Run the application:
 
-       $ npm run start
+       $ ng serve -o
 
 #### Test the application
 1. Execute the tests with Jasmine and Karma:
