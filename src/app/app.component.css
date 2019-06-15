@@ -1,3 +1,11 @@
+ .site-header {
+    position: relative;
+    z-index: 4;
+    border: 4mm ridge rgba(170, 50, 220, .6);
+    height: 125px;
+    background-color: bisque;
+ }
+
  .header { 
   background: #555;
   color: #fff;
