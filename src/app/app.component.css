@@ -1,3 +1,9 @@
+body {
+  background-image: url("../assets/img/how-to-background.jpg");
+  background-color: rgb(224, 189, 31);
+  height: 100%;
+}
+
 .wrapper{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   letter-spacing: 0.6px;

@@ -1,1 +1,25 @@
-<button class="add-project">Submit a project</button>
+
+<button ng-click="showme=true">Submit a project</button>
+<div ng-show="showme">
+  <label>Title your project:</label><br>
+  <input type="text" #newProject><br><br>
+  <label>Select a category for your project:</label><br>
+  <select name="newCategory">
+    <option value="circuits">Circuits</option>
+    <option value="cooking">Cooking</option>
+    <option value="craft">Craft</option>
+    <option value="living">Living</option>
+    <option value="outdoors">Outdoors</option>
+    <option value="workshop">Workshop</option>
+  </select><br><br>
+  <label>Select the difficulty of your project:</label><br>
+  <select name="newDifficulty">
+    <option value="simple">Simple</option>
+    <option value="intermediate">Intermediate</option>
+    <option value="expert">Expert</option>
+  </select><br><br>
+  <label>About how many steps is your project:</label>
+  <input type="number" #newNumberOfSteps><br><br>
+  <input type="text" *ngFor="let currentstep newNumberOfSteps" #newSteps><br><br>
+  <button (click)="createNewProject(newTitle.value, newCategory.value, newDifficulty.value, newNumberOfSteps.value, newSteps.value)">Create!</button>
+</div>
