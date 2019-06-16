@@ -1,5 +1,4 @@
 .wrapper{
-  color: #ccc;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   letter-spacing: 0.6px;
   font-size: 12px;
@@ -7,31 +6,26 @@
   width: 95%;
   margin: 0 auto;
   display: grid;
-  grid-gap: 1em;
 } 
 
 .wrapper .top-row {
-  display: grids;
+  color: #ccc;
+  display: grid;
   background: #555;
   grid-template-columns:repeat(8, 1fr);
+  border: solid 1px teal;
 }
 
 .nested {
   grid-gap: 1em;
   display: grid;
   grid-template-columns:repeat(3, 1fr);
-  border: red;
+  border: solid 1px navy;
 }
 
-.link {
-  background: #555;
-  color: white;
-  padding: 10px;
-}
-
-.link a{
+.top-row .link a{
   display: grid;
-  border: solid 1px black;
+  border: solid 1px lawngreen;
   grid-template-columns:repeat(8, 1fr);
   background: #555;
   color: white;
@@ -39,12 +33,22 @@
 }
  
 .item img {
-  height: 65px;
+  height: 95px;
+  border: solid 1px indianred;
 }
 
-.bottom-row {
-  text-align: center;
+.wrapper .bottom-row {
+  display: grid;
   background: peachpuff;
+  border: solid 1px red;
+  grid-template-columns:1fr 6fr 2fr 1fr 4fr 2fr;
+}
+
+.wrapper .welcome {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  min-width: 188px;
 }
 
 

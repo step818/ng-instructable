@@ -7,7 +7,7 @@ import { Project } from './models/project.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'How-To You Do';
+  title = 'how-to you do';
 
   masterProjectList: Project[] = [];
 }
