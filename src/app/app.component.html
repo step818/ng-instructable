@@ -14,7 +14,9 @@
     <h1>
         Welcome to {{ title }}!
     </h1>
-
+<!--Log-in component input -->
+    <app-log-in []="loginUser()"></app-log-in>
+<!-- Add-project component output -->
     <app-add-project (sendProject)="addProject($event)"></app-add-project>
   </div>
 </div>
@@ -62,5 +64,6 @@
     <div class="item"><form (submit)="searchSubmit()"><input name="search" placeholder="search" size="15" #searchVar><button (click)="searchProject(searchVar.value)">search</button></form></div>
   </div>
 </div>
-
+<!-- search-project component -->
+<!-- View-project component -->
 <router-outlet></router-outlet>

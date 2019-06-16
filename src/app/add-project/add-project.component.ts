@@ -9,8 +9,13 @@ import { Project } from '../models/project.model';
 export class AddProjectComponent {
   @Output() sendProject = new EventEmitter();
 
-  
+  createNewProject(title: string, category: string, description: string, difficulty: string, numberOfSteps: number, steps: string[]) {
+    let newProject: Project = new Project(title, category, description, difficulty, numberOfSteps, steps);
+    this.sendProject.emit(newProject);
+  }
 
+
+  
   constructor() { }
 
   ngOnInit() {
