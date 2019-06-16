@@ -7,8 +7,8 @@
   width: 95%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
-  
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-auto-rows: 40px 65px;
   
 } 
 
