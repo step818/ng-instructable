@@ -61,6 +61,6 @@
 </ul>
 
 <!-- search-project component -->
-<app-search-project [childSearchRelevantProjectList]="masterProjectList"></app-search-project>
+<app-search-project [childSearchRelevantProjectList]="masterProjectList" (clickSender)="viewRelevantProjects($event)"></app-search-project>
 <!-- View-project component -->
 <router-outlet></router-outlet>

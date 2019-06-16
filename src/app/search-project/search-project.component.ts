@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Project } from '../models/project.model';
 
 @Component({
@@ -8,6 +8,11 @@ import { Project } from '../models/project.model';
 })
 export class SearchProjectComponent  {
   @Input() childSearchRelevantProjectList: Project[];
+  @Output() clickSender = new EventEmitter();
+
+  searchButtonClicked(searchKeyWord: Project) {
+    this.clickSender.emit(searchKeyWord);
+  }
 
   constructor() { }
 
