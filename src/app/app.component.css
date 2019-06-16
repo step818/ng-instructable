@@ -1,18 +1,25 @@
 .wrapper{
-  width: 90%;
+  color: #ccc;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 0.6px;
+  font-size: 12px;
+  border: 4mm ridge rgba(170, 50, 220, .6);
+  width: 95%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+  
+  
 } 
 
 .item {
-  background: rgb(127, 219, 255);
+  background: #555;
   color: white;
   padding: 10px;
 }
 
 .item a{
-  background: rgb(127, 219, 255);
+  background: #555;
   color: white;
   padding: 10px;
 }
@@ -21,6 +28,25 @@
   background: rgb(60, 60, 247);
 }
  
+.item img {
+  height: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  .site-header {
     position: relative;
@@ -47,19 +73,6 @@
   min-height: 28px;
 }
 
-body {
-  background-color: #d4e1e7;
-  min-width: 1030px;
-  color: #333;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333;
-  background-color: #fff;
-}
 
 .header a.category-nav-link {
   display: -webkit-box;

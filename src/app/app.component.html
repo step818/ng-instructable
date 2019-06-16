@@ -45,9 +45,15 @@
   <div class="item"><a class="category-nav-link" href="">outside</a></div>
   <div class="item"><a class="category-nav-link" href="">teachers</a></div>
   <div class="item"><form (submit)="onSubmit()">
-      <input name="signin" placeholder="username" size="15">
+      <input name="signin" placeholder="username" size="15" #checkUser>
     </form></div>
-  <div class="item"><button (click)="submitUser(newUser.value)">Login</button></div>
+  <div class="item"><button (click)="submitUser(checkUser.value)">Login</button></div>
+  <div class="item"><img src="../assets/img/mrfixit.jpg"></div>
+  <div class="item">blank</div>
+  <div class="item">contests</div>
+  <div class="item">classes</div>
+  <div class="item">publish</div>
+  <div class="items"><form (submit)="searchSubmit()"><input name="search" placeholder="search" size="15" #searchVar></form><button (click)="searchProject(searchVar.value)">search</button></div>
 </div>
 
 <router-outlet></router-outlet>
