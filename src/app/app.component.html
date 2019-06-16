@@ -37,22 +37,32 @@
 </ul>
 
 <div class="wrapper">
-  <div class="item"><a class="category-nav-link" href="">circuits</a></div>
-  <div class="item"><a class="category-nav-link" href="">workshop</a></div>
-  <div class="item"><a class="category-nav-link" href="">craft</a></div>
-  <div class="item"><a class="category-nav-link" href="">cooking</a></div>
-  <div class="item"><a class="category-nav-link" href="">living</a></div>
-  <div class="item"><a class="category-nav-link" href="">outside</a></div>
-  <div class="item"><a class="category-nav-link" href="">teachers</a></div>
-  <div class="nested"><form (submit)="onSubmit()">
-      <input name="signin" placeholder="username" size="15" #checkUser>
-      <button (click)="submitUser(checkUser.value)">Login</button></form></div>
+  <div class="top-row">
+    <div class="link"><a class="category-nav-link" href="">circuits</a></div>
+    <div class="link"><a class="category-nav-link" href="">workshop</a></div>
+    <div class="link"><a class="category-nav-link" href="">craft</a></div>
+    <div class="link"><a class="category-nav-link" href="">cooking</a></div>
+    <div class="link"><a class="category-nav-link" href="">living</a></div>
+    <div class="link"><a class="category-nav-link" href="">outside</a></div>
+    <div class="link"><a class="category-nav-link" href="">teachers</a></div>
+    <div class="link"><form (submit)="onSubmit()">
+        <input name="signin" placeholder="username" size="15" #checkUser>
+        <button (click)="submitUser(checkUser.value)">Login</button></form></div>
+  </div>
+
   <div class="item"><img src="../assets/img/mrfixit.jpg"></div>
-  <div class="item">blank</div>
-  <div class="item">contests</div>
-  <div class="item">classes</div>
-  <div class="item">publish</div>
-  <div class="items"><form (submit)="searchSubmit()"><input name="search" placeholder="search" size="15" #searchVar><button (click)="searchProject(searchVar.value)">search</button></form></div>
+  <div class="item bottom-row"><h2>Welcome to {{ title }}!</h2></div>
+  <div class="item bottom-row">blank</div>
+  <div class="item bottom-row">blank</div>
+  <div class="item bottom-row">blank</div>
+  <div class="item bottom-row">
+    <div class="nested">
+    <div>contests</div>
+    <div>classes</div>
+    <div>publish</div>
+  </div>
+  </div>
+  <div class="item bottom-row"><form (submit)="searchSubmit()"><input name="search" placeholder="search" size="15" #searchVar><button (click)="searchProject(searchVar.value)">search</button></form></div>
 </div>
 
 <router-outlet></router-outlet>
