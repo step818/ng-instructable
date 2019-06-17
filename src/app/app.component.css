@@ -63,10 +63,10 @@ body {
 
 iframe {
   display: grid;
-  border: solid 2px black;
+  
   width: 96%;
   margin-left: 22px;
-  margin-top: -39px;
+  margin-top: 0px;
 }
 
 

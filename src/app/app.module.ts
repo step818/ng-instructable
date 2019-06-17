@@ -14,6 +14,7 @@ import { ViewCommentsComponent } from './viewapp/view-comments/view-comments.com
 import { LeaveCommentComponent } from './viewapp/leave-comment/leave-comment.component';
 import { routing } from './app.routing';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AllProjectsComponent } from './all-projects/all-projects.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     EditProjectComponent,
     ViewCommentsComponent,
     LeaveCommentComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AllProjectsComponent
   ],
   imports: [
     BrowserModule,
