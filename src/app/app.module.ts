@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,8 @@ import { LogInComponent } from './log-in/log-in.component';
 import { EditProjectComponent } from './viewapp/edit-project/edit-project.component';
 import { ViewCommentsComponent } from './viewapp/view-comments/view-comments.component';
 import { LeaveCommentComponent } from './viewapp/leave-comment/leave-comment.component';
+import { routing } from './app.routing';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,15 @@ import { LeaveCommentComponent } from './viewapp/leave-comment/leave-comment.com
     LogInComponent,
     EditProjectComponent,
     ViewCommentsComponent,
-    LeaveCommentComponent
+    LeaveCommentComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpModule,
+    AppRoutingModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
