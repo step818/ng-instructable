@@ -21,6 +21,7 @@ body {
   background: #555;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5fr 1fr;
   padding: 10px;
+  place-items: center;
 }
 
 .top-row .link a{
@@ -38,7 +39,7 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.75px;
-  margin-top:30px;
+  place-items: center;
 }
 
 
@@ -60,7 +61,13 @@ body {
   min-width: 188px;
 }
 
-
+iframe {
+  display: grid;
+  border: solid 2px black;
+  width: 96%;
+  margin-left: 22px;
+  margin-top: -39px;
+}
 
 
 
@@ -119,4 +126,5 @@ body {
 
 .site-header h1 {
   text-align: center;
+  margin-left: 50px;
 }
