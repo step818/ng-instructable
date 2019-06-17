@@ -8,7 +8,7 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   letter-spacing: 0.6px;
   font-size: 12px;
-  border: 4mm ridge rgba(170, 50, 220, .6);
+  border: 3mm ridge rgba(206, 136, 46, 1);
   width: 95%;
   margin: 0 auto;
   display: grid;
@@ -17,42 +17,45 @@ body {
 .wrapper .top-row {
   color: #ccc;
   display: grid;
+  line-height: 1em;
   background: #555;
-  grid-template-columns:repeat(8, 1fr);
-  border: solid 1px teal;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5fr 1fr;
+  padding: 10px;
 }
+
+.top-row .link a{
+  background: #555;
+  color: white;
+}
+ 
 
 .nested {
   grid-gap: 1em;
   display: grid;
   grid-template-columns:repeat(3, 1fr);
-  border: solid 1px navy;
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-top:30px;
 }
 
-.top-row .link a{
-  display: grid;
-  border: solid 1px lawngreen;
-  grid-template-columns:repeat(8, 1fr);
-  background: #555;
-  color: white;
-  padding: 10px;
-}
- 
+
 .item img {
   height: 95px;
-  border: solid 1px indianred;
 }
 
 .wrapper .bottom-row {
   display: grid;
-  background: peachpuff;
-  border: solid 1px red;
-  grid-template-columns:1fr 6fr 2fr 1fr 4fr 2fr;
+  height: 96px;
+  background: rgb(233, 233, 231);
+  grid-template-columns:1fr 7fr 2fr 1fr 4fr 2fr;
 }
 
 .wrapper .welcome {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 700;
   min-width: 188px;
 }
