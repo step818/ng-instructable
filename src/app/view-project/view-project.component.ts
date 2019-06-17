@@ -1,4 +1,6 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
 import { Project } from '../models/project.model';
 
 @Component({
@@ -6,13 +8,15 @@ import { Project } from '../models/project.model';
   templateUrl: './view-project.component.html',
   styleUrls: ['./view-project.component.css']
 })
-export class ViewProjectComponent {
-  @Input() childProjectList: Project[];
-  @Output() clickSender = new EventEmitter();
+export class ViewProjectComponent implements OnInit {
+  projectId: number = null;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private location: Location) {}
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.projectId = parseInt(urlParameters['id']);
+    });
   }
 
 }
