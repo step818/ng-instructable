@@ -27,37 +27,17 @@
         <div class="item"><form (submit)="searchSubmit()"><input name="search" placeholder="search" size="15" #searchVar><button (click)="searchProject(searchVar.value)">search</button></form></div>
       </div>
     </div>
-
-  <iframe height="650" src="https://player.vimeo.com/video/326406620?autoplay=1&loop=1&background=1"></iframe>  
- 
-
-
-
-
-
-
-
-
-
-
-    
-
-      
+   
+  <router-outlet></router-outlet>
+  
   <!--Log-in component input -->
       <app-log-in [childUser]="username" (clickedValidate)="validateProfile($event)"></app-log-in>
   <!-- Add-project component output -->
       <!-- <app-add-project (sendProject)="addProject($event)"></app-add-project> -->
-    
-
-
-
-
   <!-- search-project component -->
   <app-search-project [childSearchRelevantProjectList]="masterProjectList" (clickSender)="viewRelevantProjects($event)"></app-search-project>
   <!-- View-project component -->
 
   <!-- all-projects component -->
   <app-all-projects></app-all-projects>
-
-  <router-outlet></router-outlet>
 </body>

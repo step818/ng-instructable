@@ -12,9 +12,10 @@ import { LogInComponent } from './log-in/log-in.component';
 import { EditProjectComponent } from './viewapp/edit-project/edit-project.component';
 import { ViewCommentsComponent } from './viewapp/view-comments/view-comments.component';
 import { LeaveCommentComponent } from './viewapp/leave-comment/leave-comment.component';
-import { routing } from './app.routing';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AllProjectsComponent } from './all-projects/all-projects.component';
+import { routing } from './app.routing';
+
 
 @NgModule({
   declarations: [
