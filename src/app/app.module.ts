@@ -22,7 +22,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
-  databaseURL: masterFirebaseConfig.databaseURL
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
 };
 
 @NgModule({
@@ -43,6 +44,8 @@ export const firebaseConfig = {
     FormsModule,
     HttpModule,
     routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

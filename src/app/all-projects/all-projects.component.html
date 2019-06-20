@@ -1,7 +1,7 @@
 <p>
   all-projects works!
 </p>
-<div *ngFor="let project of projects" (click)="goToProjectPage(project)" class="panel panel-default">
+<div *ngFor="let project of projects | async" (click)="goToProjectPage(project)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{project.title}}</em> in {{project.category}}</h3>
   </div>

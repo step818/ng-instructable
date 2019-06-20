@@ -20,7 +20,7 @@ export class ViewProjectComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.projectId = parseInt(urlParameters['id']);
     });
-    this.projectToDisplay = this.projectService.getProjectById(this.projectId);
+    // this.projectToDisplay = this.projectService.getProjectById(this.projectId);
   }
 
 }
