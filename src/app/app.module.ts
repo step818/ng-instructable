@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchProjectComponent } from './search-project/search-project.component';
 import { AddProjectComponent } from './add-project/add-project.component';
@@ -16,6 +15,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AllProjectsComponent } from './all-projects/all-projects.component';
 import { routing } from './app.routing';
 
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL
+};
 
 @NgModule({
   declarations: [
@@ -34,8 +42,7 @@ import { routing } from './app.routing';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule,
-    routing
+    routing,
   ],
   providers: [],
   bootstrap: [AppComponent]
