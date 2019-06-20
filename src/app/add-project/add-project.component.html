@@ -18,8 +18,8 @@
     <option value="intermediate">Intermediate</option>
     <option value="expert">Expert</option>
   </select><br><br>
-  <label>About how many steps is your project:</label>
-  <input type="number" #newNumberOfSteps><br><br>
-  <input type="text" *ngFor="let currentstep newNumberOfSteps" #newSteps><br><br>
-  <button (click)="createNewProject(newTitle.value, newCategory.value, newDifficulty.value, newNumberOfSteps.value, newSteps.value)">Create!</button>
+
+  <label>Steps:</label>
+  <input type="text" #newSteps><br><br>
+  <button (click)="createNewProject(newTitle.value, newCategory.value, newDifficulty.value, newSteps.value)">Create!</button>
 </div>

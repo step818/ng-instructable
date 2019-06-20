@@ -20,9 +20,9 @@ export class AllProjectsComponent implements OnInit {
   }
 
 
-  goToProjectPage(clickedProject: Project) {
-    this.router.navigate(['projects', clickedProject.id]);
-  };
+  // goToProjectPage(clickedProject: Project) {
+  //   this.router.navigate(['projects', clickedProject.id]);
+  // };
   
 
 }

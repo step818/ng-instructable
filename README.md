@@ -30,6 +30,7 @@ This exercise is designed to be a hub for DIY and "How-to" projects uploaded by 
 2. Install the required packages:
 
        $ npm install
+       $ npm install rxjs-compat --save
 3. Build the application:
 
        $ npm run build
