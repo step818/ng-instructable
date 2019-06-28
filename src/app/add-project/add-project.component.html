@@ -1,4 +1,6 @@
+<body>
 
+<img src="../../assets/img/create-header1.jpg">
 <button ng-click="showme=true">Submit a project</button>
 <div ng-show="showme">
   <label>Title your project:</label><br>
@@ -23,3 +25,4 @@
   <input type="text" #newSteps><br><br>
   <button (click)="createNewProject(newTitle.value, newCategory.value, newDifficulty.value, newSteps.value)">Create!</button>
 </div>
+</body>
