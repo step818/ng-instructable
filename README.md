@@ -21,7 +21,7 @@ This exercise is designed to be a hub for DIY and "How-to" projects uploaded by 
 
 ## Setup/Installation Requirements
 
-* _You can check out the repository link in my github pages [Link to repository](https://github.com/step818/ng-friday-project)_
+* _You can check out the repository link in my github pages [Link to repository](https://github.com/step818/ng-instructable)_
 
 #### Install, build and run the application
 1. Navigate to the application root directory:

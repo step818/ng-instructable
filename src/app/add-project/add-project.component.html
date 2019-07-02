@@ -1,25 +1,35 @@
-
-<button ng-click="showme=true">Submit a project</button>
-<div ng-show="showme">
-  <label>Title your project:</label><br>
-  <input type="text" #newProject><br><br>
-  <label>Select a category for your project:</label><br>
-  <select name="newCategory">
-    <option value="circuits">Circuits</option>
-    <option value="cooking">Cooking</option>
-    <option value="craft">Craft</option>
-    <option value="living">Living</option>
-    <option value="outdoors">Outdoors</option>
-    <option value="workshop">Workshop</option>
-  </select><br><br>
-  <label>Select the difficulty of your project:</label><br>
-  <select name="newDifficulty">
-    <option value="simple">Simple</option>
-    <option value="intermediate">Intermediate</option>
-    <option value="expert">Expert</option>
-  </select><br><br>
-
-  <label>Steps:</label>
-  <input type="text" #newSteps><br><br>
-  <button (click)="createNewProject(newTitle.value, newCategory.value, newDifficulty.value, newSteps.value)">Create!</button>
-</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12">
+      <div class="RequestForm">
+        <h2>What Do you want to share?</h2>
+        <div class="Forms">
+          <form>
+            <div class="form-group">
+              <input class="form-control" placeholder="I made a project called:" type="text" #projectTitle>
+            </div>
+            <div class="form-group">
+              <input class="form-control" placeholder="Category" type="text" #projectCategory>
+            </div>
+            <div class="form-group">
+              <input class="form-control" placeholder="Step 1" type="text" #projectStep1>
+            </div>
+            <div class="form-group">
+              <input class="form-control" placeholder="Step 2" type="text" #projectStep2>
+            </div>
+            <div class="form-group">
+              <input class="form-control" placeholder="Step 3" type="text" #projectStep3>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Step 4" rows="5" #projectStep3></textarea>
+            </div>
+            <div class="image-upload">
+  <img [src]="imageSrc" style="max-width:300px;max-height:300px"/>
+  <input name="imageUrl" type="file" accept="image/*" (change)="handleInputChange($event)" />
+</div> 
+            <button (click)="submitProject(projectTitle.value, projectCategory.value, projectStep1.value, projectStep2.value, projectStep3.value, projectStep4.value); projectTitle.value=''; projectCategory.value=''; projectStep1.value=''; projectStep2.value=''; projectStep3.value='';
+         projectStep4.value=''">PUBLISH</button>
+          </form>
+        </div>
+      </div>
+    </div>

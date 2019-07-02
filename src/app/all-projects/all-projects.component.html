@@ -3,6 +3,15 @@
 </p>
 <div *ngFor="let project of projects | async" (click)="goToProjectPage(project)" class="panel panel-default">
   <div class="panel-body">
+      <div class="col-md-7">
+          <a href="#">
+            <img width="700" height="300"class="img-fluid rounded mb-3 mb-md-0" src="{{project.imageSrc}}" alt="image of project">
+          </a>
+        </div>
     <h3><em>{{project.title}}</em> in {{project.category}}</h3>
+    <h3>{{project.step1}} <br><br>
+        {{project.step2}} <br><br>
+        {{project.step3}} <br><br>
+        {{project.step4}}</h3>
   </div>
 </div>
