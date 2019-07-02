@@ -1,10 +1,10 @@
-# _How-To you do_
+# _Mock Instructables_
 
 #### _10th Independent project, 06/15/2019_
 
 #### By _**Stephen Trewick**_
 
-## Program Name _How-To you do_ 10th Independent Project
+## Program Name _Mock Instructables_ 10th Independent Project
 
 ## Description
 
@@ -34,7 +34,12 @@ This exercise is designed to be a hub for DIY and "How-to" projects uploaded by 
 3. Build the application:
 
        $ npm run build
-4. Run the application:
+4. Use the right api-key:
+
+       Copy the masterFirebaseConfig export from the api-key folder
+       Create an api-keys.ts file in app folder
+       Paste the const masterFirebaseConfig in the api-keys.ts file
+5. Run the application:
 
        $ ng serve -o
 

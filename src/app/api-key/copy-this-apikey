@@ -1,0 +1,7 @@
+export const masterFirebaseConfig = {
+    apiKey: "AIzaSyAn9aOdz6WmJN2V9t5ViKBlgwjIBmlG1vE",
+    authDomain: "instructable-1e8bc.firebaseapp.com",
+    databaseURL: "https://instructable-1e8bc.firebaseio.com",
+    storageBucket: "",
+    messagingSenderId: "341727548939"
+}
