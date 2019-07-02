@@ -27,11 +27,11 @@
         <div class="item"><form (submit)="searchSubmit()"><input name="search" placeholder="Lets Make..." size="15" #searchVar><button (click)="searchProject(searchVar.value)">Lets Make...</button></form></div>
       </div>
     </div>
-   
+    
   <router-outlet></router-outlet>
-
-  <!-- all-projects component -->
-  <app-all-projects></app-all-projects>
-
-  <a routerLink="everyproject">ErrThang</a>
-</body>
+    
+  <br><br><br><br>
+    <div class="everyLink">
+      <a routerLink="everyproject"><div id="explore">Explore Projects</div><div><img src="../assets/img/allprojectslink.jpg"></div></a>
+    </div>
+  </body>

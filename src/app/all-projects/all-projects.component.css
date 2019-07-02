@@ -5,3 +5,18 @@ p {
 h3 {
   color: antiquewhite;
 }
+
+.title {
+  color: rgb(138, 235, 241);
+  font-size: 2em;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.step {
+  color: lightblue;
+  font-size: 1.5em;
+}

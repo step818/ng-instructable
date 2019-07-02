@@ -61,7 +61,28 @@ body {
   min-width: 188px;
 }
 
+#explore {
+  display: grid;
+  width: 40%;
+  color: black;
+  font-size: 2em;
+  bottom: 4px;
+  left: 16px;
+  text-shadow:
+		-1px -1px 0 rgb(252, 250, 250),
+		1px -1px 0 rgb(247, 244, 244),
+		-1px 1px 0 rgb(253, 252, 252),
+    1px 1px 0 rgb(248, 247, 247);
+}
 
+.everyLink {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr;
+  margin: 5%;
+  align-items: center;
+  place-content: center;
+}
 
 
 
